@@ -28,11 +28,11 @@ function mainMenu2() {
 
     } while (choice != 0)
 
+    // tìm kiếm theo tên gần đúng
     function searchProcductName2() {
         let name = input.question('Nhap ten can tim :');
         let name1 = new RegExp(name);
         let flag = 0;
-
         for (let i = 0; i < listP.listProduct2.length; i++) {
             let test1 = name1.test(listP.listProduct2[i].name)
             if (test1==true){
